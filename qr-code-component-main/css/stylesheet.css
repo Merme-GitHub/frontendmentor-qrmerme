@@ -1,0 +1,45 @@
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+/* Global */
+body {
+    background-color: hsl(212, 45%, 89%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    font-family: 'Outfit', sans-serif;
+    min-height: 700px;
+}
+@media (min-width:1440px) {
+    body {
+        min-height: 1200px;
+    }
+}
+
+/* QR */
+.qr {
+    background-color: white;
+    text-align: center;
+    color: hsl(218, 44%, 22%);
+    padding: 5rem;
+    border-radius: 3rem;
+    width: 95%;
+}
+@media (min-width:768px) {
+    .qr {
+        max-width: 50%;
+    }
+}
+.qr > img {
+    border-radius: 3rem;
+    width: 100%;
+}
+.qr > p {
+    color: hsl(220, 15%, 55%);
+}
+
